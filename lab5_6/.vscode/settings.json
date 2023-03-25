@@ -1,0 +1,15 @@
+{
+    "C_Cpp.errorSquiggles": "Enabled",
+    "files.associations": {
+        "userinterface.h": "c",
+        "task_sched.h": "c",
+        "kmalloc.h": "c",
+        "irq.h": "c",
+        "myprintk.h": "c",
+        "wallclock.h": "c",
+        "algorithm": "c",
+        "tasktesstcase.h": "c",
+        "shell.h": "c",
+        "task_rr.h": "c"
+    }
+}

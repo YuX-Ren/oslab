@@ -1,0 +1,38 @@
+.
+├── multibootheader
+│   └── multibootHeader.o
+├── myOS
+│   ├── dev
+│   │   ├── i8253.o
+│   │   ├── i8259A.o
+│   │   ├── uart.o
+│   │   └── vga.o
+│   ├── i386
+│   │   ├── io.o
+│   │   ├── irq.o
+│   │   └── irqs.o
+│   ├── kernel
+│   │   ├── mem
+│   │   │   ├── dPartition.o
+│   │   │   ├── eFPartition.o
+│   │   │   ├── malloc.o
+│   │   │   └── pMemInit.o
+│   │   ├── tick.o
+│   │   └── wallClock.o
+│   ├── lib
+│   │   └── string.o
+│   ├── osStart.o
+│   ├── printk
+│   │   └── myPrintk.o
+│   └── start32.o
+├── myOS.elf
+├── myOS.elf.id0
+├── myOS.elf.id1
+├── myOS.elf.id2
+├── myOS.elf.nam
+├── myOS.elf.til
+└── userApp
+    ├── main.o
+    ├── memTestCase.o
+    └── shell.o
+

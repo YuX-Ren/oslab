@@ -1,0 +1,54 @@
+.
+├── makefile
+├── multibootheader
+│   └── multibootHeader.S
+├── myOS
+│   ├── dev
+│   │   ├── Makefile
+│   │   ├── uart.c
+│   │   └── vga.c
+│   ├── i386
+│   │   ├── io.c
+│   │   └── Makefile
+│   ├── include
+│   │   ├── io.h
+│   │   ├── myPrintk.h
+│   │   ├── uart.h
+│   │   ├── vga.h
+│   │   └── vsprintf.h
+│   ├── lib
+│   │   ├── Makefile
+│   │   └── vsprintf.c
+│   ├── Makefile
+│   ├── myOS.ld
+│   ├── osStart.c
+│   ├── printk
+│   │   ├── Makefile
+│   │   └── myPrintk.c
+│   ├── start32.S
+│   └── userInterface.h
+├── output
+│   ├── multibootheader
+│   │   └── multibootHeader.o
+│   ├── myOS
+│   │   ├── dev
+│   │   │   ├── uart.o
+│   │   │   └── vga.o
+│   │   ├── i386
+│   │   │   └── io.o
+│   │   ├── lib
+│   │   │   └── vsprintf.o
+│   │   ├── osStart.o
+│   │   ├── printk
+│   │   │   └── myPrintk.o
+│   │   └── start32.o
+│   ├── myOS.elf
+│   └── userApp
+│       └── main.o
+├── source2img.sh
+├── tree
+└── userApp
+    ├── main.c
+    └── Makefile
+
+16 directories, 35 files

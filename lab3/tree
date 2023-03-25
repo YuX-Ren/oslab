@@ -1,0 +1,74 @@
+.
+├── elf
+├── makefile
+├── multibootheader
+│   └── multibootHeader.S
+├── myOS
+│   ├── dev
+│   │   ├── i8253.c
+│   │   ├── i8259A.c
+│   │   ├── Makefile
+│   │   ├── uart.c
+│   │   └── vga.c
+│   ├── i386
+│   │   ├── io.c
+│   │   ├── irq.S
+│   │   ├── irqs.c
+│   │   └── Makefile
+│   ├── include
+│   │   ├── i8253.h
+│   │   ├── i8259A.h
+│   │   ├── io.h
+│   │   ├── irqs.h
+│   │   ├── myPrintk.h
+│   │   ├── tick.h
+│   │   ├── uart.h
+│   │   ├── vga.h
+│   │   ├── vsprintf.h
+│   │   └── wallClock.h
+│   ├── kernel
+│   │   ├── Makefile
+│   │   ├── tick.c
+│   │   └── wallClock.c
+│   ├── Makefile
+│   ├── myOS.ld
+│   ├── osStart.c
+│   ├── printk
+│   │   ├── Makefile
+│   │   ├── myPrintk.c
+│   │   └── vsprintf.c
+│   └── start32.S
+├── output
+│   ├── multibootheader
+│   │   └── multibootHeader.o
+│   ├── myOS
+│   │   ├── dev
+│   │   │   ├── i8253.o
+│   │   │   ├── i8259A.o
+│   │   │   ├── uart.o
+│   │   │   └── vga.o
+│   │   ├── i386
+│   │   │   ├── io.o
+│   │   │   ├── irq.o
+│   │   │   └── irqs.o
+│   │   ├── kernel
+│   │   │   ├── tick.o
+│   │   │   └── wallClock.o
+│   │   ├── osStart.o
+│   │   ├── printk
+│   │   │   ├── myPrintk.o
+│   │   │   └── vsprintf.o
+│   │   └── start32.o
+│   ├── myOS.elf
+│   └── userApp
+│       ├── main.o
+│       └── startShell.o
+├── reference.md
+├── source2img.sh
+├── tree
+└── userApp
+    ├── main.c
+    ├── Makefile
+    └── startShell.c
+
+16 directories, 55 files
